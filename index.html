@@ -28,7 +28,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            <span class="tex-name">TEX</span>: Test-time Scaling Coding Agents via Execution-based Cross-Validation
+            <span class="tex-name">TEX</span>: Test-time Scaling Testing Agents via Execution-based Cross-Validation
           </h1>
 
           <div class="is-size-5 publication-authors">
@@ -104,7 +104,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce <b><span class="tex-name">TEX</span></b>, a novel approach for test-time scaling of testing and coding agents using execution-based cross-validation. Inference-time scaling of coding and testing agents has largely focused on two simple paradigms: parallel scaling (sampling N candidates in parallel) or sequential scaling (i.e. thinking for more tokens). In this work, we propose a scaling strategy that combines the benefits of parallel scaling, namely diversity, with sequential scaling. In particular, TEX runs multiple coding agents in parallel— each generating a test and code solutions for a given problem. Then, we perform a cross-candidate execution where code solutions from each candidate are executed against test scripts from other candidates, and vice versa. We then let each agent continue scaling sequentially, but now additionally conditioned on how its test and code solutions fare against other candidates. Our results show that in real-world test-case generation benchmarks such as SWT-Bench, TEX significantly improves pass@1 (+7%). Further, using majority voting (i.e. running generated tests against generated code patches) leads to state-of-the-art performance (86.4%) on SWT-Bench when using Claude 4 Sonnet and sampling just 4 parallel candidates. 
+            We introduce <b><span class="tex-name">TEX</span></b>, a novel approach for test-time scaling of test-case generation agents using execution-based cross-validation. Inference-time scaling of coding and testing agents has largely focused on two simple paradigms: parallel scaling (sampling N candidates in parallel) or sequential scaling (i.e. thinking for more tokens). In this work, we propose a scaling strategy that combines the benefits of parallel scaling, namely diversity, with sequential scaling. In particular, TEX runs multiple coding agents in parallel— each generating a test and code solutions for a given problem. Then, we perform a cross-candidate execution where code solutions from each candidate are executed against test scripts from other candidates, and vice versa. We then let each agent continue scaling sequentially, but now additionally conditioned on how its test and code solutions fare against other candidates. Our results show that in real-world test-case generation benchmarks such as SWT-Bench, TEX significantly improves pass@1 (+7%). Further, using majority voting (i.e. running generated tests against generated code patches) leads to state-of-the-art performance (86.4%) on SWT-Bench when using Claude 4 Sonnet and sampling just 4 parallel candidates. 
           </p>
         </div>
       </div>
